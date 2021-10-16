@@ -1,0 +1,200 @@
+
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local EMTHUB = Instance.new("TextLabel")
+local itach = Instance.new("ImageLabel")
+local close = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local PetSimulatorXClick = Instance.new("TextButton")
+local PetSimulatorXGUI = Instance.new("Frame")
+local PetSimulatorXGuis = Instance.new("TextLabel")
+local VoidHub = Instance.new("TextButton")
+local DXHGUI = Instance.new("TextButton")
+local EzPets = Instance.new("TextButton")
+local SystemExodus = Instance.new("TextButton")
+local closepetsimxgui = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(255, 69, 0)
+main.BorderColor3 = Color3.fromRGB(254, 15, 246)
+main.BorderSizePixel = 2
+main.Position = UDim2.new(0.286370635, 0, 0.294919491, 0)
+main.Size = UDim2.new(0, 556, 0, 331)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+EMTHUB.Name = "EMTHUB"
+EMTHUB.Parent = main
+EMTHUB.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+EMTHUB.BorderColor3 = Color3.fromRGB(157, 21, 150)
+EMTHUB.BorderSizePixel = 3
+EMTHUB.Size = UDim2.new(0, 556, 0, 61)
+EMTHUB.Font = Enum.Font.Nunito
+EMTHUB.LineHeight = 0.990
+EMTHUB.Text = "EMT HUB"
+EMTHUB.TextColor3 = Color3.fromRGB(255, 255, 255)
+EMTHUB.TextSize = 70.000
+EMTHUB.TextStrokeTransparency = 0.000
+EMTHUB.TextTransparency = 0.020
+EMTHUB.TextWrapped = true
+
+itach.Name = "itach"
+itach.Parent = main
+itach.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+itach.Position = UDim2.new(0.58273381, 0, 0.202416927, 0)
+itach.Size = UDim2.new(0, 226, 0, 123)
+itach.Image = "http://www.roblox.com/asset/?id=7751880045"
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+close.BackgroundTransparency = 1.000
+close.BorderColor3 = Color3.fromRGB(27, 42, 53)
+close.Position = UDim2.new(0.67086333, 0, 0.628398836, 0)
+close.Size = UDim2.new(0, 128, 0, 42)
+close.Font = Enum.Font.RobotoCondensed
+close.Text = "Hide Gui"
+close.TextColor3 = Color3.fromRGB(218, 5, 5)
+close.TextSize = 33.000
+close.MouseButton1Down:connect(function()
+main.Visible = false
+openmain.Visible = true
+end)
+
+ScrollingFrame.Parent = main
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.Position = UDim2.new(0, 0, 0.202416912, 0)
+ScrollingFrame.Size = UDim2.new(0, 184, 0, 264)
+ScrollingFrame.ScrollBarThickness = 8
+
+PetSimulatorXClick.Name = "PetSimulatorXClick"
+PetSimulatorXClick.Parent = ScrollingFrame
+PetSimulatorXClick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PetSimulatorXClick.BackgroundTransparency = 1.000
+PetSimulatorXClick.Position = UDim2.new(0.17125681, 0, -0.145015106, 0)
+PetSimulatorXClick.Size = UDim2.new(0, 111, 0, 237)
+PetSimulatorXClick.Font = Enum.Font.Ubuntu
+PetSimulatorXClick.Text = "Pet Simulator X"
+PetSimulatorXClick.TextColor3 = Color3.fromRGB(0, 0, 0)
+PetSimulatorXClick.TextSize = 22.000
+PetSimulatorXClick.MouseButton1Down:connect(function()
+PetSimulatorXGUI.Visible = true
+end)
+
+PetSimulatorXGUI.Name = "Pet Simulator X GUI"
+PetSimulatorXGUI.Parent = main
+PetSimulatorXGUI.BackgroundColor3 = Color3.fromRGB(255, 69, 0)
+PetSimulatorXGUI.Position = UDim2.new(0.16906476, 0, -0.102719083, 0)
+PetSimulatorXGUI.Size = UDim2.new(0, 369, 0, 247)
+PetSimulatorXGUI.Visible = false
+PetSimulatorXGUI.Active = true
+PetSimulatorXGUI.Draggable = true
+
+PetSimulatorXGuis.Name = "PetSimulatorXGuis"
+PetSimulatorXGuis.Parent = PetSimulatorXGUI
+PetSimulatorXGuis.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PetSimulatorXGuis.Size = UDim2.new(0, 369, 0, 50)
+PetSimulatorXGuis.Font = Enum.Font.Nunito
+PetSimulatorXGuis.Text = "Pet Simulator X GUIS"
+PetSimulatorXGuis.TextColor3 = Color3.fromRGB(255, 255, 255)
+PetSimulatorXGuis.TextSize = 41.000
+
+VoidHub.Name = "VoidHub"
+VoidHub.Parent = PetSimulatorXGUI
+VoidHub.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
+VoidHub.Position = UDim2.new(0.0189701896, 0, 0.251012146, 0)
+VoidHub.Size = UDim2.new(0, 138, 0, 52)
+VoidHub.Font = Enum.Font.RobotoCondensed
+VoidHub.Text = "VoidHub"
+VoidHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+VoidHub.TextSize = 25.000
+VoidHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wind596/VoidHub/main/WiningDediy", true))()
+end)
+
+DXHGUI.Name = "DXHGUI"
+DXHGUI.Parent = PetSimulatorXGUI
+DXHGUI.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
+DXHGUI.Position = UDim2.new(0.0189701896, 0, 0.744939268, 0)
+DXHGUI.Size = UDim2.new(0, 138, 0, 52)
+DXHGUI.Font = Enum.Font.RobotoCondensed
+DXHGUI.Text = "DXH GUI"
+DXHGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+DXHGUI.TextSize = 25.000
+DXHGUI.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/si1nnx/psxx/main/g"))()
+end)
+
+EzPets.Name = "EzPets"
+EzPets.Parent = PetSimulatorXGUI
+EzPets.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
+EzPets.Position = UDim2.new(0.607045949, 0, 0.744939268, 0)
+EzPets.Size = UDim2.new(0, 138, 0, 52)
+EzPets.Font = Enum.Font.RobotoCondensed
+EzPets.Text = "EzPets"
+EzPets.TextColor3 = Color3.fromRGB(0, 0, 0)
+EzPets.TextSize = 25.000
+EzPets.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua"))()
+end)
+
+SystemExodus.Name = "SystemExodus"
+SystemExodus.Parent = PetSimulatorXGUI
+SystemExodus.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
+SystemExodus.Position = UDim2.new(0.607046008, 0, 0.251012176, 0)
+SystemExodus.Size = UDim2.new(0, 138, 0, 52)
+SystemExodus.Font = Enum.Font.RobotoCondensed
+SystemExodus.Text = "System Exodus"
+SystemExodus.TextColor3 = Color3.fromRGB(0, 0, 0)
+SystemExodus.TextSize = 25.000
+SystemExodus.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://system-exodus.com/scripts/PetSimulator/PetSimulatorX.lua", true))()
+end)
+
+closepetsimxgui.Name = "closepetsimxgui"
+closepetsimxgui.Parent = PetSimulatorXGUI
+closepetsimxgui.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+closepetsimxgui.Position = UDim2.new(0.937669396, 0, 0, 0)
+closepetsimxgui.Size = UDim2.new(0, 23, 0, 17)
+closepetsimxgui.Font = Enum.Font.Nunito
+closepetsimxgui.Text = "X"
+closepetsimxgui.TextColor3 = Color3.fromRGB(0, 0, 0)
+closepetsimxgui.TextSize = 14.000
+closepetsimxgui.MouseButton1Down:connect(function()
+PetSimulatorXGUI.Visible = false
+end)
+
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.fromRGB(255, 69, 0)
+openmain.Position = UDim2.new(0, 0, 0.684014916, 0)
+openmain.Size = UDim2.new(0, 100, 0, 31)
+openmain.Active = true
+openmain.Draggable = true
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.fromRGB(255, 69, 0)
+open.Size = UDim2.new(0, 100, 0, 31)
+open.Font = Enum.Font.RobotoCondensed
+open.Text = "Open EMT Hub"
+open.TextColor3 = Color3.fromRGB(0, 0, 0)
+open.TextSize = 17.000
+open.MouseButton1Down:connect(function()
+openmain.Visible = false 
+main.Visible = true
+end)
