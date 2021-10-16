@@ -2,11 +2,9 @@
 
 -- Instances:
 
-
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local EMTHUB = Instance.new("TextLabel")
-local itach = Instance.new("ImageLabel")
 local close = Instance.new("TextButton")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local PetSimulatorXClick = Instance.new("TextButton")
@@ -18,8 +16,11 @@ local EzPets = Instance.new("TextButton")
 local SystemExodus = Instance.new("TextButton")
 local closepetsimxgui = Instance.new("TextButton")
 local MiniFarmingGui = Instance.new("TextButton")
+local itach = Instance.new("ImageLabel")
+local copydiscord = Instance.new("TextButton")
 local openmain = Instance.new("Frame")
 local open = Instance.new("TextButton")
+
 
 --Properties:
 
@@ -29,8 +30,8 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 main.Name = "main"
 main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(255, 69, 0)
-main.BorderColor3 = Color3.fromRGB(254, 15, 246)
-main.BorderSizePixel = 2
+main.BorderColor3 = Color3.fromRGB(56, 56, 56)
+main.BorderSizePixel = 4
 main.Position = UDim2.new(0.286370635, 0, 0.294919491, 0)
 main.Size = UDim2.new(0, 556, 0, 331)
 main.Visible = false
@@ -40,8 +41,7 @@ main.Draggable = true
 EMTHUB.Name = "EMTHUB"
 EMTHUB.Parent = main
 EMTHUB.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-EMTHUB.BorderColor3 = Color3.fromRGB(157, 21, 150)
-EMTHUB.BorderSizePixel = 3
+EMTHUB.BorderColor3 = Color3.fromRGB(44, 44, 44)
 EMTHUB.Size = UDim2.new(0, 556, 0, 61)
 EMTHUB.Font = Enum.Font.Nunito
 EMTHUB.LineHeight = 0.990
@@ -55,8 +55,10 @@ EMTHUB.TextWrapped = true
 itach.Name = "itach"
 itach.Parent = main
 itach.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-itach.Position = UDim2.new(0.58273381, 0, 0.202416927, 0)
-itach.Size = UDim2.new(0, 226, 0, 123)
+itach.BorderColor3 = Color3.fromRGB(53, 53, 53)
+itach.BorderSizePixel = 2
+itach.Position = UDim2.new(0.433453232, 0, 0.2145015, 0)
+itach.Size = UDim2.new(0, 280, 0, 187)
 itach.Image = "http://www.roblox.com/asset/?id=7751880045"
 
 close.Name = "close"
@@ -64,21 +66,24 @@ close.Parent = main
 close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 close.BackgroundTransparency = 1.000
 close.BorderColor3 = Color3.fromRGB(27, 42, 53)
-close.Position = UDim2.new(0.67086333, 0, 0.628398836, 0)
+close.Position = UDim2.new(0.570143938, 0, 0.82175231, 0)
 close.Size = UDim2.new(0, 128, 0, 42)
 close.Font = Enum.Font.RobotoCondensed
 close.Text = "Hide Gui"
-close.TextColor3 = Color3.fromRGB(218, 5, 5)
-close.TextSize = 33.000
+close.TextColor3 = Color3.fromRGB(136, 19, 3)
+close.TextSize = 43.000
+close.TextStrokeTransparency = 0.950
 close.MouseButton1Down:connect(function()
-main.Visible = false
-openmain.Visible = true
+	main.Visible = false
+	openmain.Visible = true
 end)
 
 ScrollingFrame.Parent = main
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(240, 64, 0)
+ScrollingFrame.BorderSizePixel = 2
 ScrollingFrame.Position = UDim2.new(0, 0, 0.202416912, 0)
 ScrollingFrame.Size = UDim2.new(0, 184, 0, 264)
 ScrollingFrame.ScrollBarThickness = 8
@@ -89,12 +94,12 @@ PetSimulatorXClick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 PetSimulatorXClick.BackgroundTransparency = 1.000
 PetSimulatorXClick.Position = UDim2.new(0.17125681, 0, -0.145015106, 0)
 PetSimulatorXClick.Size = UDim2.new(0, 111, 0, 237)
-PetSimulatorXClick.Font = Enum.Font.Ubuntu
+PetSimulatorXClick.Font = Enum.Font.SciFi
 PetSimulatorXClick.Text = "Pet Simulator X"
 PetSimulatorXClick.TextColor3 = Color3.fromRGB(0, 0, 0)
 PetSimulatorXClick.TextSize = 22.000
 PetSimulatorXClick.MouseButton1Down:connect(function()
-PetSimulatorXGUI.Visible = true
+	PetSimulatorXGUI.Visible = true
 end)
 
 PetSimulatorXGUI.Name = "Pet Simulator X GUI"
@@ -177,7 +182,7 @@ closepetsimxgui.Text = "X"
 closepetsimxgui.TextColor3 = Color3.fromRGB(0, 0, 0)
 closepetsimxgui.TextSize = 14.000
 closepetsimxgui.MouseButton1Down:connect(function()
-PetSimulatorXGUI.Visible = false
+	PetSimulatorXGUI.Visible = false
 end)
 
 MiniFarmingGui.Name = "MiniFarmingGui"
@@ -210,6 +215,6 @@ open.Text = "Open EMT Hub"
 open.TextColor3 = Color3.fromRGB(0, 0, 0)
 open.TextSize = 17.000
 open.MouseButton1Down:connect(function()
-openmain.Visible = false 
-main.Visible = true
+	openmain.Visible = false 
+	main.Visible = true
 end)
