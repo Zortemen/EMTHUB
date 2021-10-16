@@ -2,6 +2,7 @@
 
 -- Instances:
 
+
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local EMTHUB = Instance.new("TextLabel")
@@ -16,6 +17,7 @@ local DXHGUI = Instance.new("TextButton")
 local EzPets = Instance.new("TextButton")
 local SystemExodus = Instance.new("TextButton")
 local closepetsimxgui = Instance.new("TextButton")
+local MiniFarmingGui = Instance.new("TextButton")
 local openmain = Instance.new("Frame")
 local open = Instance.new("TextButton")
 
@@ -176,6 +178,19 @@ closepetsimxgui.TextColor3 = Color3.fromRGB(0, 0, 0)
 closepetsimxgui.TextSize = 14.000
 closepetsimxgui.MouseButton1Down:connect(function()
 PetSimulatorXGUI.Visible = false
+end)
+
+MiniFarmingGui.Name = "MiniFarmingGui"
+MiniFarmingGui.Parent = PetSimulatorXGUI
+MiniFarmingGui.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
+MiniFarmingGui.Position = UDim2.new(0.311653107, 0, 0.497975707, 0)
+MiniFarmingGui.Size = UDim2.new(0, 138, 0, 52)
+MiniFarmingGui.Font = Enum.Font.RobotoCondensed
+MiniFarmingGui.Text = "Mini Farming Gui"
+MiniFarmingGui.TextColor3 = Color3.fromRGB(0, 0, 0)
+MiniFarmingGui.TextSize = 20.000 
+MiniFarmingGui.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Zortemen/minifarmgui/main/farm", true))()
 end)
 
 openmain.Name = "openmain"
